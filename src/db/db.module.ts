@@ -16,9 +16,16 @@ import { ENV_CONSTANTS } from 'src/env.constants';
           password: configService.get<string>(ENV_CONSTANTS.TYPEORM_PASSWORD),
           database: configService.get<string>(ENV_CONSTANTS.TYPEORM_DATABASE),
           port: Number(configService.get<string>(ENV_CONSTANTS.TYPEORM_PORT)),
-          entities: [join(__dirname, '../entities/**/*.entity{.ts,.js}')],
-          migrationsRun: false,
-          synchronize: true,
+          entities: [configService.get<string>(ENV_CONSTANTS.TYPEORM_ENTITIES)],
+          synchronize: configService.get<boolean>(
+            ENV_CONSTANTS.TYPEORM_SYNCHRONIZE,
+          ),
+          migrationsRun: configService.get<boolean>(
+            ENV_CONSTANTS.TYPEORM_MIGRATIONS_RUN,
+          ),
+          migrations: [
+            configService.get<string>(ENV_CONSTANTS.TYPEORM_MIGRATIONS),
+          ],
           options: { enableArithAbort: true, encrypt: true },
         };
       },

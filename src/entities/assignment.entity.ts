@@ -25,6 +25,9 @@ export class Assignment {
   @Column({ length: 250 })
   subject: string;
 
+  @Column({ length: 20 })
+  language: string;
+
   @Column({ type: 'text', nullable: true })
   description?: string;
 
