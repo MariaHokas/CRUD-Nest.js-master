@@ -1,0 +1,10 @@
+{
+    "eslint.alwaysShowStatus": true,
+    "cSpell.words": [
+        "mssql",
+        "mytes",
+        "nestjs",
+        "seetings",
+        "typeorm"
+    ]
+}
