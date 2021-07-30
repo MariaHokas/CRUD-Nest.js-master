@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { JwtModule } from '@nestjs/jwt';
-import { ENV_CONSTANTS } from 'src/env.constants';
 import { AuthService } from './auth.service';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { JwtStrategy } from './strategy/jwt.strategy';
+import { ENV_CONSTANTS } from '../env.constants';
 
 @Module({
   imports: [

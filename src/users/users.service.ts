@@ -4,8 +4,8 @@ import { from, Observable } from 'rxjs';
 import { Repository } from 'typeorm';
 import { CreateUserDto } from './dto/createUser.dto';
 import { User } from '../entities/user.entity';
-import { AuthService } from 'src/auth/auth.service';
-import { UserI } from 'src/entities/interfaces/user.interface';
+import { AuthService } from '../auth/auth.service';
+import { UserI } from '../entities/interfaces/user.interface';
 import { map, switchMap } from 'rxjs/operators';
 import { LoginUserDto } from './dto/LoginUser.dto';
 

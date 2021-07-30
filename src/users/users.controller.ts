@@ -13,10 +13,10 @@ import { UsersService } from './users.service';
 import { User } from '../entities/user.entity';
 import { CreateUserDto } from './dto/createUser.dto';
 import { Observable } from 'rxjs';
-import { UserI } from 'src/entities/interfaces/user.interface';
+import { UserI } from '../entities/interfaces/user.interface';
 import { LoginUserDto } from './dto/LoginUser.dto';
 import { map } from 'rxjs/operators';
-import { JwtAuthGuard } from 'src/auth/guards/jwt-auth.guard';
+import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
 
 @Controller('users')
 export class UsersController {
