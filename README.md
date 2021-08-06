@@ -62,7 +62,7 @@ To check if docker container is runing:
 ```bash
 $ docker ps
 ```
-# Database
+## Database
 
 https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
 
@@ -109,9 +109,9 @@ $ yarn star:dev
 
 ```
 # Migration
-1.npm run build
-2.npx typeorm migration:generate -n NAMEFORTHECHANGES -d src/migrations
-3.npm run
+$ npm run build
+$ npx typeorm migration:generate -n NAMEFORTHECHANGES -d src/migrations
+$ npm run
 
 
 ##  Swagger(Open API)
