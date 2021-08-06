@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { join } from 'path';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { TypeOrmModule, TypeOrmModuleOptions } from '@nestjs/typeorm';
-import { ENV_CONSTANTS } from 'src/env.constants';
+import { ENV_CONSTANTS } from '../env.constants';
 
 @Module({
   imports: [

@@ -9,10 +9,13 @@ import { UpdateAssignmentDto } from './dto/update-assignment.dto';
 @Injectable()
 export class AssignmentService {
   constructor(
-    @InjectRepository(Assignment) private assignmentRepository: Repository<Assignment>,
+    @InjectRepository(Assignment)
+    private assignmentRepository: Repository<Assignment>,
   ) {}
 
-  async create(createAssignmentDto: CreateAssignmentDto): Promise<CreateAssignmentDto> {
+  async create(
+    createAssignmentDto: CreateAssignmentDto,
+  ): Promise<CreateAssignmentDto> {
     return await this.assignmentRepository.save(createAssignmentDto);
   }
 

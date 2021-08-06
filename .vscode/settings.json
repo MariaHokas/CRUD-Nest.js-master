@@ -1,4 +1,46 @@
 {
   "eslint.alwaysShowStatus": true,
-  "cSpell.words": ["mssql", "mytes", "nestjs", "seetings", "typeorm", "varchar"]
+  "cSpell.words": [
+    "mssql",
+    "mytes",
+    "nestjs",
+    "nvarchar",
+    "seetings",
+    "typeorm",
+    "varchar"
+  ],
+  "cSpell.ignoreWords": [
+    "adventure",
+    "camel",
+    "ce",
+    "config",
+    "cp",
+    "d",
+    "db",
+    "dev",
+    "e",
+    "entities",
+    "generator",
+    "h",
+    "local",
+    "localhost",
+    "lt",
+    "model",
+    "mssql",
+    "no",
+    "npx",
+    "o",
+    "p",
+    "pascal",
+    "password",
+    "rf",
+    "rm",
+    "sa",
+    "src",
+    "true",
+    "typeorm",
+    "u",
+    "works",
+    "x"
+  ]
 }

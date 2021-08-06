@@ -7,10 +7,10 @@ import { ProductView } from '../entities/productView.entity';
 export class ProductViewService {
   constructor(
     @InjectRepository(ProductView)
-    private productRepository: Repository<ProductView>,
+    private productViewRepository: Repository<ProductView>,
   ) {}
 
   async getProduct(): Promise<ProductView[]> {
-    return await this.productRepository.find();
+    return await this.productViewRepository.find();
   }
 }
