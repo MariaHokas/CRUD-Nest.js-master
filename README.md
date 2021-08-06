@@ -109,10 +109,11 @@ $ yarn star:dev
 
 ```
 # Migration
+```bash
 $ npm run build
 $ npx typeorm migration:generate -n NAMEFORTHECHANGES -d src/migrations
 $ npm run
-
+```
 
 ##  Swagger(Open API)
 For opening documentation locally paste in your browser (http://localhost:3050/api) or exchange with your custom app env `PORT`.
