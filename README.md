@@ -62,6 +62,14 @@ To check if docker container is runing:
 ```bash
 $ docker ps
 ```
+# Database
+
+https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15&tabs=ssms
+
+Moving database to Docker
+
+https://www.c-sharpcorner.com/article/restoring-a-sql-server-database-in-docker/
+
 
 ## Installation of node modules
 
@@ -88,6 +96,7 @@ or
 # development
 $ yarn start
 ```
+
 # watch mode
 ```bash
 # development
@@ -99,6 +108,12 @@ or
 $ yarn star:dev
 
 ```
+# Migration
+1.npm run build
+2.npx typeorm migration:generate -n NAMEFORTHECHANGES -d src/migrations
+3.npm run
+
+
 ##  Swagger(Open API)
 For opening documentation locally paste in your browser (http://localhost:3050/api) or exchange with your custom app env `PORT`.
 
